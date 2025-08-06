@@ -93,3 +93,5 @@ WHITE = (" "|\t|\n)
 
 <YYINITIAL>.        { return new Token(Token.ERROR);
                       /* todo lo demas es ERROR */ }
+
+<YYINITIAL>{PLUS}   { return new Token(Token.PLUS);   }
